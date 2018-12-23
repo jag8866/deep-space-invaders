@@ -62,5 +62,6 @@ Clearly this strategy is at least somewhat effective for this purpose, but it is
 games it would not work nearly as well. Space Invaders starts you off in the same state each time, and 
 so this agent is able to score a few points without having to actually know anything about the game, it
 needs only remember a few moves it can make right after the start state to quickly score some points,
-and watching it play you can see this is essentially what it does. A much more effective strategy to use
+and watching it play you can see this is essentially what it does (especially with my training data, where
+I consistently made the same moves at the beginning of games). A much more effective strategy to use
 would be something like Deep Q Learning.
