@@ -1,6 +1,6 @@
 # Deep Space Invaders
 
-A simple convolutional neural network which plays Space Invaders, trained on human play data
+A simple convolutional neural network which plays Space Invaders, trained on human play data.
 
 ### Prerequisites
 
