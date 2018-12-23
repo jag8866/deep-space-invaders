@@ -22,7 +22,7 @@ files you put into the folder and create one big data file which includes all th
 Now you are ready to train the model. Simply run agent_network_trainer.py and it will train a CNN for 500
 epochs (currently the only way to adjust this and other parameters is to edit the code directly). A graph
 will be displayed on completion showing you the training and validation accuracy. This method of AI
-gameplay is a fairly innefective one - you will likely find (as I did) that the training loss continues to
+gameplay is a fairly ineffective one - you will likely find (as I did) that the training loss continues to
 decline while the validation loss remains the same or even rises, meaning that the model is simply
 "memorizing" the training data instead of learning to generalize it effectively. More on this below under
 "Results".
