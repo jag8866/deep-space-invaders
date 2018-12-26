@@ -10,16 +10,16 @@ A simple convolutional neural network which plays Space Invaders, trained on hum
 
 ## Usage
 
-Run space_invaders_human.py and play Space Invaders to the best of your ability to generate data. The game 
+Run ```python space_invaders_human.py``` and play Space Invaders to the best of your ability to generate data. The game 
 waits for your input to progress to the next frame. Use the W, A and D keys to shoot and move, and press S
 to progress a frame without any action (this input and the corresponding frame will not be included in the
 data.
 
 Repeat the above step as many times as possible - the more data the better. Then, move all of the data you
-wish to include into a subfolder called Human_Play_Data, and run data_concat.py which will collect all the
+wish to include into a subfolder called Human_Play_Data, and run ```python data_concat.py``` which will collect all the
 files you put into the folder and create one big data file which includes all the data from each.
 
-Now you are ready to train the model. Simply run agent_network_trainer.py and it will train a CNN for 500
+Now you are ready to train the model. Simply run ```python agent_network_trainer.py``` and it will train a CNN for 500
 epochs (currently the only way to adjust this and other parameters is to edit the code directly). A graph
 will be displayed on completion showing you the training and validation accuracy. This method of AI
 gameplay is a fairly ineffective one - you will likely find (as I did) that the training loss continues to
@@ -27,10 +27,10 @@ decline while the validation loss remains the same or even rises, meaning that t
 "memorizing" the training data instead of learning to generalize it effectively. More on this below under
 "Results".
 
-Running space_invaders_pseudohuman.py will load up your newly trained model and allow you to watch it play
+Running ```python space_invaders_pseudohuman.py``` will load up your newly trained model and allow you to watch it play
 a game.
 
-si_plot.py will run the agent 100 times and display a colorful graph of the distribution of scores received
+```python si_plot.py``` will run the agent 100 times and display a colorful graph of the distribution of scores received
 throughout. This is useful for comparing its effectiveness - for reference, a naive "random" agent is
 included as space_invaders_random.py, you can run si_plot.py on this agent by replacing the import statement
 at the top from "import space_invaders_pseudohuman as agent" to "import space_invaders_random as agent"
